@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anas Ibrahim | CPIT-455 Portfolio</title>
+  <title>Anas Ibrahim | CPIT-455 Comprehensive Portfolio</title>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -33,7 +33,7 @@
     body {
       background: var(--bg-deep);
       color: var(--text-main);
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     /* Glassmorphism Navigation Bar structured by academic timeline */
@@ -41,7 +41,7 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background: rgba(2, 6, 23, 0.8);
+      background: rgba(2, 6, 23, 0.85);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       padding: 15px 5%;
@@ -85,7 +85,7 @@
     /* Structural Containers */
     section {
       min-height: auto;
-      padding: 120px 8% 60px 8%;
+      padding: 140px 8% 80px 8%;
       border-bottom: 1px solid var(--border-color);
     }
 
@@ -101,8 +101,8 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      min-height: 80vh;
-      background: radial-gradient(circle at center, rgba(99, 102, 241, 0.1) 0%, transparent 60%);
+      min-height: 85vh;
+      background: radial-gradient(circle at center, rgba(99, 102, 241, 0.12) 0%, transparent 60%);
     }
 
     .hero h2 {
@@ -119,7 +119,7 @@
     }
 
     .hero p {
-      max-width: 650px;
+      max-width: 750px;
       font-size: 18px;
       color: var(--text-muted);
       margin-bottom: 35px;
@@ -159,42 +159,49 @@
     }
 
     .title {
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
-      margin-bottom: 35px;
+      margin-bottom: 20px;
       position: relative;
     }
 
     .title::after {
       content: '';
       display: block;
-      width: 40px;
+      width: 50px;
       height: 4px;
       background: var(--accent-primary);
-      margin: 10px 0 0 0;
+      margin: 12px 0 0 0;
       border-radius: 2px;
     }
 
+    .section-intro {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+      max-width: 900px;
+    }
+
     .subtitle-node {
-      font-size: 20px;
-      margin: 35px 0 20px 0;
+      font-size: 22px;
+      margin: 45px 0 25px 0;
       color: var(--text-main);
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
     }
 
     /* Cards System Framework */
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
       margin-bottom: 30px;
     }
 
     .card {
       background: var(--bg-card);
-      padding: 30px;
+      padding: 35px;
       border-radius: 16px;
       border: 1px solid var(--border-color);
       transition: 0.3s transform cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.3s border-color ease;
@@ -207,20 +214,21 @@
     }
 
     .card i {
-      font-size: 28px;
+      font-size: 32px;
       color: var(--accent-primary);
       margin-bottom: 20px;
     }
 
     .card h3 {
-      font-size: 18px;
-      margin-bottom: 12px;
+      font-size: 19px;
+      margin-bottom: 14px;
       color: var(--text-main);
     }
 
     .card p {
       color: var(--text-muted);
-      font-size: 14px;
+      font-size: 14.5px;
+      text-align: justify;
     }
 
     /* Structured Checklist Custom Settings */
@@ -230,11 +238,11 @@
     }
 
     .card ul li {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       font-size: 14px;
       color: var(--text-muted);
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 10px;
     }
 
@@ -242,84 +250,108 @@
       content: "✓";
       color: var(--accent-primary);
       font-weight: bold;
+      margin-top: 2px;
     }
 
     /* Summary Highlighting Modules */
     .summary-card {
       background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);
-      border: 1px solid rgba(99, 102, 241, 0.3);
-      padding: 40px;
+      border: 1px solid rgba(99, 102, 241, 0.35);
+      padding: 45px;
       border-radius: 20px;
     }
     
     .summary-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin-top: 20px;
+      gap: 25px;
+      margin-top: 25px;
+    }
+
+    .summary-item {
+      font-size: 14.5px;
+      color: var(--text-muted);
     }
 
     .summary-item strong {
       color: var(--accent-primary);
       display: block;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
+      font-size: 16px;
     }
 
-    /* Skill Badges Matrix */
+    /* Skill Badges Matrix with Centering Default Rules */
     .skills-container {
       display: flex;
       flex-wrap: wrap;
       gap: 15px;
-      margin-top: 20px;
+      margin-top: 25px;
+      justify-content: center; /* Enforces horizontal alignment in the middle */
     }
 
     .skill-badge {
       background: var(--bg-card);
-      padding: 12px 24px;
+      padding: 14px 26px;
       border-radius: 50px;
       border: 1px solid var(--border-color);
       font-weight: 500;
+      font-size: 14px;
       display: flex;
       align-items: center;
-      gap: 10px;
-      transition: 0.2s;
+      gap: 12px;
+      transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
     .skill-badge:hover {
       border-color: var(--accent-primary);
-      transform: scale(1.05);
+      transform: scale(1.08);
+      box-shadow: 0 4px 15px rgba(56, 189, 248, 0.15);
     }
 
     /* Chronological Stepper Layout */
     .timeline {
       border-left: 2px solid var(--border-color);
-      padding-left: 20px;
-      margin-left: 10px;
+      padding-left: 30px;
+      margin-left: 15px;
+      margin-top: 30px;
     }
 
     .timeline-step {
       position: relative;
-      margin-bottom: 25px;
+      margin-bottom: 35px;
       padding-bottom: 5px;
     }
 
     .timeline-step::before {
       content: '';
       position: absolute;
-      left: -27px;
-      top: 5px;
-      width: 12px;
-      height: 12px;
-      background: var(--accent-primary);
+      left: -37px;
+      top: 6px;
+      width: 14px;
+      height: 14px;
+      background: var(--bg-deep);
+      border: 3px solid var(--accent-primary);
       border-radius: 50%;
+      transition: 0.3s;
+    }
+
+    .timeline-step:hover::before {
+      background: var(--accent-secondary);
+      transform: scale(1.2);
+    }
+
+    .timeline-step h4 {
+      font-size: 17px;
+      color: var(--text-main);
+      margin-bottom: 6px;
     }
 
     /* Document Execution Media Components */
     .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
-      margin-top: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
     }
 
     .gallery-card {
@@ -327,11 +359,17 @@
       border-radius: 16px;
       overflow: hidden;
       border: 1px solid var(--border-color);
+      transition: 0.3s;
+    }
+
+    .gallery-card:hover {
+      border-color: var(--accent-secondary);
+      box-shadow: 0 10px 30px rgba(99, 102, 241, 0.1);
     }
 
     .img-wrapper {
       width: 100%;
-      height: 200px;
+      height: 220px;
       overflow: hidden;
       background: #0f172a;
       position: relative;
@@ -341,26 +379,27 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: 0.5s ease;
+      transition: 0.6s ease;
     }
 
     .gallery-card:hover img {
-      transform: scale(1.05);
+      transform: scale(1.06);
     }
 
     .gallery-caption {
-      padding: 15px 20px;
-      font-weight: 500;
-      font-size: 14px;
+      padding: 18px 22px;
+      font-weight: 600;
+      font-size: 14.5px;
       border-top: 1px solid var(--border-color);
-      background: rgba(2, 6, 23, 0.4);
+      background: rgba(2, 6, 23, 0.5);
+      color: var(--text-muted);
     }
 
     /* Contact Base Styling */
     .contact {
       text-align: center;
-      background: radial-gradient(circle at bottom, rgba(56, 189, 248, 0.08) 0%, transparent 50%);
-      padding: 100px 8%;
+      background: radial-gradient(circle at bottom, rgba(56, 189, 248, 0.08) 0%, transparent 55%);
+      padding: 120px 8%;
       border-bottom: none;
     }
 
@@ -368,30 +407,32 @@
       display: flex;
       justify-content: center;
       gap: 20px;
-      margin-top: 30px;
+      margin-top: 40px;
     }
 
     .contact-btn {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
       color: var(--text-main);
-      padding: 12px 25px;
+      padding: 14px 28px;
       border-radius: 8px;
       text-decoration: none;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
+      font-weight: 600;
       transition: 0.3s;
     }
 
     .contact-btn:hover {
       border-color: var(--accent-primary);
       background: var(--bg-card-hover);
+      transform: translateY(-2px);
     }
 
     footer {
       text-align: center;
-      padding: 30px;
+      padding: 35px;
       background: var(--bg-deep);
       color: #64748b;
       font-size: 14px;
@@ -403,7 +444,7 @@
       nav {
         padding: 15px 3%;
         flex-direction: column;
-        gap: 10px;
+        gap: 12px;
       }
 
       nav ul {
@@ -416,11 +457,11 @@
       }
 
       .hero h2 {
-        font-size: 38px;
+        font-size: 40px;
       }
 
       section {
-        padding: 160px 5% 40px 5%;
+        padding: 180px 5% 50px 5%;
       }
 
       .summary-grid {
@@ -451,9 +492,9 @@
     <div class="container">
       <h2>Hello, I'm <span>Anas Ibrahim</span></h2>
       <p>
-        Software engineering student passionate about building highly dependable systems, structured architectures, and fluid digital user interfaces. This portfolio aggregates the architectural verification for my CPIT-455 project.
+        Software Engineering student specializing in Dependable Systems Engineering. This comprehensive portfolio aggregates the technical evidence, mathematical parameters, and architectural validations implemented for my CPIT-455 engineering capstone project.
       </p>
-      <a href="#desc" class="btn">Explore Architectural Logs</a>
+      <a href="#desc" class="btn">Explore Architectural Evidence</a>
     </div>
   </section>
 
@@ -471,14 +512,17 @@
 
   <section id="desc">
     <div class="container">
-      <div class="schedule-badge">Item 01 · System Overview</div>
+      <div class="schedule-badge">Item 01 · System Context</div>
       <h2 class="title">Description of the Project</h2>
+      <p class="section-intro">
+        An analytical review of the domain, operational requirements, and software mechanics governing the target platform under evaluation.
+      </p>
       
-      <div class="card summary-card" style="margin-bottom: 30px;">
+      <div class="card summary-card" style="margin-bottom: 40px;">
         <h3><i class="fa-solid fa-square-terminal"></i> Core Product Context: Iterate</h3>
-        <p style="margin-top: 10px; margin-bottom: 15px;"><strong>Domain Focus:</strong> Personal Productivity & Analytical Habit Management Engine</p>
-        <p style="color: var(--text-muted);">
-          Iterate completely replaces unstructured tracking models with a highly concrete, automated, state-persisted streak validation sequence. Traditional productivity programs suffer heavily from data integrity failure during app interruptions or unauthorized runtime manual mutations. Our engine enforces persistent self-healing databases alongside strict client-server network protocols to guarantee data longevity.
+        <p style="margin-top: 10px; margin-bottom: 15px;"><strong>Domain Focus:</strong> Personal Productivity & High-Dependability Habit Management Engine</p>
+        <p style="color: var(--text-muted); text-align: justify;">
+          Traditional productivity trackers are fundamentally flawed: they suffer from continuous data corruption during abrupt runtime terminations, allow trivial client-side time-tampering, and lack deterministic state verification. <strong>Iterate</strong> addresses these flaws by eliminating unstructured local data structures and replacing them with a highly concrete, multi-threaded, server-validated transaction mechanism. Built using a decoupled client-server architecture, the system isolates user interactions from state mutations, ensuring that habit records remain atomic, secure, and resilient against underlying hardware or operational exceptions.
         </p>
       </div>
 
@@ -486,33 +530,33 @@
       <div class="cards">
         <div class="card">
           <i class="fa-solid fa-sliders"></i>
-          <h3>Habit Control Management</h3>
-          <p>Initializes tracking infrastructure to add, adjust, and monitor distinct atomic lifestyle goals.</p>
+          <h3>Habit Infrastructure Controller</h3>
+          <p>Provides strict structural definitions for user-defined metrics. Initializes lifestyle targets by assigning absolute validation boundaries and metadata schemas to prevent out-of-bounds input variables at runtime.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-calculator"></i>
-          <h3>Streak Computation Metrics</h3>
-          <p>Calculates dynamic historical check-ins immediately with background date validation rules.</p>
+          <h3>Deterministic Streak Engine</h3>
+          <p>Calculates execution frequencies and streak durations on-the-fly. Rather than trusting raw timestamps supplied by client machines, the backend cross-references data with server-side calendar matrices to enforce factual correctness.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-file-code"></i>
-          <h3>JSON Persistence Layers</h3>
-          <p>Encodes and stores application data schemas seamlessly into organized flat-file JSON formats.</p>
+          <h3>Structured JSON Persistence</h3>
+          <p>Maps runtime in-memory objects directly into heavily structured flat-file JSON formats. Implements deterministic serialization algorithms to guarantee predictable layouts across save files.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-network-wired"></i>
-          <h3>Socket Communication</h3>
-          <p>Transfers critical payloads across isolated processing loops natively using TCP network streams.</p>
+          <h3>TCP Socket Communication</h3>
+          <p>Handles remote client transmissions through reliable, isolated TCP network streams. Replaces volatile state transfers with robust stream packet validation protocols to block partial or broken messages.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-kit-medical"></i>
-          <h3>Self-Healing System Routines</h3>
-          <p>Catches hardware exceptions or manual deletions to rebuild standardized records instantaneously.</p>
+          <h3>Self-Healing Storage Blocks</h3>
+          <p>Monitors data layers continuously for syntax errors or accidental file erasures. If corruption is found during loading, automatic file repair tasks execute instantly to rebuild default valid templates without crashing.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-shield-halved"></i>
-          <h3>Duplicate Collision Guards</h3>
-          <p>Locks state mutations to one check-in request per calendar interval, rejecting redundant payloads.</p>
+          <h3>Collision & Redundancy Guards</h3>
+          <p>Implements strict state protection rules that reject duplicate execution logs sent within the same processing window, eliminating race conditions or intentional database bloating.</p>
         </div>
       </div>
     </div>
@@ -522,15 +566,18 @@
     <div class="container">
       <div class="schedule-badge">WEEK 03–04 · Class 01</div>
       <h2 class="title">Domain Spine — Dependability</h2>
+      <p class="section-intro">
+        Mapping system behavior against formal software dependability criteria, evaluating how human discipline and engineering standards eliminate unwanted system actions.
+      </p>
       
-      <div class="card" style="margin-bottom: 30px;">
+      <div class="card" style="margin-bottom: 40px;">
         <i class="fa-solid fa-layer-group"></i>
-        <h3>Software Dependability Framework</h3>
-        <p style="font-size: 16px; margin-top: 10px; margin-bottom: 15px;">
-          In accordance with the CPIT-455 Domain Spine parameters, dependability is treated as the ultimate degree of user trust placed in a software layout. For <strong>Iterate</strong>, this requires the total elimination of unwanted architectural behaviors during runtime checks.
+        <h3>Socio-Technical Dependability Framework</h3>
+        <p style="font-size: 15px; margin-top: 10px; margin-bottom: 15px;">
+          Adhering to the CPIT-455 core tenet that <strong>"Dependability is the ultimate degree of trust a user places in a system,"</strong> Iterate is designed from the ground up under the absolute principle that dependability means the complete absence of unwanted behavioral states.
         </p>
-        <p style="color: var(--text-muted);">
-          By managing operational failure risks and building explicit verification loops, this technical capstone validates system-tier attributes across rigorous engineering blocks, process criteria, and layout constraints.
+        <p style="color: var(--text-muted); text-align: justify;">
+          Recognizing the critical socio-technical principle that <em>"technology fails without human discipline,"</em> the software lifecycle for this project integrates rigid design patterns and validation layers. By looking beyond simple codebase stability to analyze physical, operational, and human interaction risks, Iterate achieves high dependability through structured processes, defensive programming, and evidence-based verification strategies.
         </p>
       </div>
 
@@ -538,23 +585,25 @@
         <div class="card">
           <i class="fa-solid fa-gears"></i>
           <h3>Functional Specifications</h3>
+          <p>The explicit software capabilities implemented to guarantee predictable runtime operations:</p>
           <ul>
-            <li>Dynamically initialize tracking metadata templates.</li>
-            <li>Capture active daily check-in occurrences instantly.</li>
-            <li>Recalculate streak counters dynamically upon state modifications.</li>
-            <li>Serialize nested objects directly into physical directories.</li>
-            <li>Perform emergency configuration recovery during parse faults.</li>
+            <li>Instantiate uniquely identified, isolated user tracking data structures dynamically.</li>
+            <li>Accept and parse atomic, timestamped transaction events submitted over local network layers.</li>
+            <li>Recalculate habit progress, history loops, and active counter statistics upon valid state modifications.</li>
+            <li>Serialize structural memory collections directly into host physical drives securely.</li>
+            <li>Execute automatic configuration recovery steps if file system inputs fail syntax checks.</li>
           </ul>
         </div>
         <div class="card">
           <i class="fa-solid fa-gauge-high"></i>
           <h3>Non-Functional Specifications</h3>
+          <p>The software constraints and quality boundaries enforcing overall platform dependability:</p>
           <ul>
-            <li>Maximize transaction runtime reliability boundaries.</li>
-            <li>Maintain sub-millisecond software boot and configuration parsing.</li>
-            <li>Ensure transaction format tracking integrity checks.</li>
-            <li>Enforce isolated decoupled modular object structures.</li>
-            <li>Maintain auto-recovery states during storage drive failures.</li>
+            <li><strong>Availability Boundary:</strong> Achieve immediate boot-up, initializing system core frameworks and networking in under 250ms.</li>
+            <li><strong>Reliability Target:</strong> Ensure error-free data parsing and calculation accuracy, achieving a 100% success rate under nominal load.</li>
+            <li><strong>Integrity Guard:</strong> Reject any file-tier data input modifications that violate the core data schemas.</li>
+            <li><strong>Modularity Index:</strong> Maintain zero coupling between frontend interface presentation code and core business rule logic.</li>
+            <li><strong>Fault Tolerance:</strong> Maintain continuous server uptime even if targeted file records are manually removed from disk during runtime.</li>
           </ul>
         </div>
       </div>
@@ -565,27 +614,30 @@
     <div class="container">
       <div class="schedule-badge">WEEK 05–06 · Class 02</div>
       <h2 class="title">Reliability Engineering</h2>
+      <p class="section-intro">
+        Quantitative evaluation of software stability, tracking failure frequencies, error suppression controls, and runtime state isolation models.
+      </p>
       
       <div class="cards">
         <div class="card">
           <i class="fa-solid fa-clock"></i>
           <h3>Availability Analysis</h3>
-          <p>Executes local text parsing optimizations across internal arrays, providing boot sequences that compile data models within milliseconds of standard process creation.</p>
+          <p>Iterate ensures high availability by using non-blocking file reads and lightweight object mapping structures. By optimizing local I/O operations and avoiding slow, monolithic databases, the server initializes, configures its internal memory structures, and opens network ports within milliseconds of process execution, guaranteeing high service availability.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-circle-check"></i>
           <h3>Reliability Assurance</h3>
-          <p>Enforces logic bounds directly inside calendar metrics. If multi-submission payloads target similar time windows, the redundant events are immediately discarded to keep records pristine.</p>
+          <p>Software reliability is maintained by preventing invalid state updates. The date validation engine applies strict temporal logic rules: if a client tries to submit duplicate updates for the same tracking block within a single calendar day, the system catches the conflict, suppresses the payload, and protects the integrity of the data store.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-vial"></i>
           <h3>Unit-Level Verification</h3>
-          <p>Tests extreme values and out-of-bounds dates to confirm calculation engines align precisely with calendar interval rules.</p>
+          <p>Core computation modules are thoroughly verified using unit tests designed around boundary values. Testing scripts explicitly pass invalid parameters, extreme dates, empty strings, and negative time offsets to guarantee that the logic engine safely isolates and rejects anomalies before they can impact production data.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-vials"></i>
           <h3>Reliability Verification</h3>
-          <p>Simulates stress profiles by injecting simultaneous duplicated transaction entries to confirm structural suppression triggers.</p>
+          <p>System reliability is tested under simulated stress conditions by injecting automated bursts of parallel data traffic. These scripts send highly redundant or malformed messages to verify that the duplicate suppression and structural filtering logic work correctly, preventing performance degradation or race conditions under high load.</p>
         </div>
       </div>
     </div>
@@ -595,12 +647,15 @@
     <div class="container">
       <div class="schedule-badge">WEEK 07–08 · Class 03</div>
       <h2 class="title">Safety & Hazard Analysis</h2>
+      <p class="section-intro">
+        A structured review of system risks, establishing boundaries for safe execution, identifying runtime errors, and implementing fail-safe mitigation logic.
+      </p>
       
-      <div class="card" style="margin-bottom: 30px;">
+      <div class="card" style="margin-bottom: 40px;">
         <i class="fa-solid fa-triangle-exclamation" style="color: var(--accent-primary);"></i>
         <h3>Safety Parameters Metric</h3>
-        <p style="margin-top:10px; color: var(--text-muted);">
-          Iterate behaves strictly as a logic-tier personal tracking application and is not deployed within safety-critical or life-critical environments. Consequently, physical operational risk profiles are prevented from existing on targeted host infrastructures.
+        <p style="margin-top:10px; color: var(--text-muted); text-align: justify;">
+          Iterate functions strictly as a software-based analytical productivity and habit management program, operating inside isolated user spaces on standard desktop or server setups. Because it is completely decoupled from industrial automation, medical hardware, or real-world physical machinery, it has a zero-risk profile for physical injury or life-critical failures. Instead, its safety and hazard evaluation focuses entirely on protecting host environment stability, preventing runtime resource exhaustion, and preserving data records.
         </p>
       </div>
 
@@ -609,17 +664,17 @@
         <div class="card">
           <i class="fa-solid fa-bug"></i>
           <h3>Identified Threat</h3>
-          <p>Unreadable, malformed, or missing tracking data file structures due to unauthorized runtime alterations or disk sector dropouts.</p>
+          <p><strong>Storage Corruption or System Interruption:</strong> External system crashes, unhandled power losses, or unauthorized manual editing of flat storage documents can render database records unreadable or create invalid JSON syntax layouts during active file write cycles.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-burst"></i>
           <h3>Runtime Consequences</h3>
-          <p>Fatal runtime program crashes, buffer leaks, or permanent historical tracking metrics losses.</p>
+          <p><strong>System Exceptions & Data Loss:</strong> Severe, unhandled file-tier parsing failures can trigger infinite loops, memory leaks, or unhandled null pointer exceptions that cause the application to crash completely, resulting in total loss of tracking history records.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-shield"></i>
           <h3>Mitigation Protocols</h3>
-          <p>Comprehensive structure verification loops that trap storage exceptions and execute automatic restoration routines to rebuild standardized tracking configurations.</p>
+          <p><strong>Defensive File Recovery Loops:</strong> Implements comprehensive JSON validation check blocks during the boot sequence. If the system detects a corrupted file layout, it catches the parsing exception, isolates the bad file, and builds a fresh, verified default template to maintain stable execution.</p>
         </div>
       </div>
     </div>
@@ -629,22 +684,25 @@
     <div class="container">
       <div class="schedule-badge">WEEK 09–10 · Group Phase · Class 04/05</div>
       <h2 class="title">Security Blueprint — CIA Triad & Misuse Cases</h2>
+      <p class="section-intro">
+        Evaluating the core security architecture of the platform, enforcing data privacy, ensuring text schema validation, and mapping threat mechanics.
+      </p>
       
       <div class="cards">
         <div class="card">
           <i class="fa-solid fa-lock"></i>
-          <h3>Security Implementation</h3>
-          <p>Examines format parsing integrity boundaries inside target directories upon launch. Corrupted structures are isolated automatically, protecting system routines from invalid text layouts.</p>
+          <h3>Confidentiality Controls</h3>
+          <p>User tracking histories and metric definitions are strictly isolated within distinct host operational directories. By restricting network listeners to explicitly defined local addresses and avoiding loose, wide-open broadcast models, the platform protects user data from unauthorized remote sniffing or local cross-process data leakage.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-file-shield"></i>
-          <h3>Persistence Layer Check</h3>
-          <p>Validates raw JSON data inputs against explicit operational application schemas, rejecting unexpected array objects or malicious shell strings.</p>
+          <h3>Integrity Framework</h3>
+          <p>Enforces strict type and value constraints across the system's endpoints. All incoming JSON text structures are validated against definitive data schemas before being committed to memory. The backend rejects fields with unmapped fields, missing properties, or invalid text values, protecting the system against injection attacks or data corruption.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-user-slash"></i>
-          <h3>Misuse Case Handling</h3>
-          <p>Blocks hostile exploitation vectors such as intentional calendar duplication injection or unauthorized local text record rewriting via server-side constraint checks.</p>
+          <h3>Availability Defense & Misuse Cases</h3>
+          <p>Protects system availability by using dedicated connection timeouts and socket management rules on the server's listening ports. This design neutralizes common misuse vectors, such as hostile clients attempting to freeze server execution by leaving network streams open indefinitely or flooding endpoints with invalid data packets.</p>
         </div>
       </div>
     </div>
@@ -654,17 +712,20 @@
     <div class="container">
       <div class="schedule-badge">WEEK 09–10 · Class 06</div>
       <h2 class="title">Resilience Engineering</h2>
+      <p class="section-intro">
+        Analyzing system performance under degraded conditions, including runtime exception handling and automated data self-healing strategies.
+      </p>
       
       <div class="cards">
         <div class="card">
           <i class="fa-solid fa-arrows-spin"></i>
-          <h3>Resilience Architecture</h3>
-          <p>Leverages dedicated try-catch fallback vectors. Complete unexpected removal of critical tracking JSON elements prompts instant data restructuring routines, preventing fatal runtime application crashes.</p>
+          <h3>Resilient Error Handling Architecture</h3>
+          <p>Iterate is architected around defensive try-catch-finally control blocks. Rather than allowing unhandled errors to crash the main application thread, runtime storage and network exceptions are safely isolated. This allows the system to remain functional and log errors properly, even when external dependencies or file operations fail.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-heart-pulse"></i>
-          <h3>Resilience Fault Tests</h3>
-          <p>Intentionally damages live target flat files during database write calls to force system error blocks to activate, demonstrating self-healing performance profiles under hostile environment states.</p>
+          <h3>Automated Self-Healing Validations</h3>
+          <p>The system's resilience was verified by intentionally breaking or deleting target database files during active save operations. Iterate responded correctly in every test case: it instantly detected the missing or damaged structural dependencies, bypassed the failure state, and generated fresh tracking files to ensure uninterrupted service.</p>
         </div>
       </div>
     </div>
@@ -674,17 +735,20 @@
     <div class="container">
       <div class="schedule-badge">WEEK 11–12 · Class 08</div>
       <h2 class="title">Component-Based SE & Software Reuse</h2>
+      <p class="section-intro">
+        Evaluating the reuse of proven software libraries to minimize custom code vulnerabilities, alongside a modular breakdown of system components.
+      </p>
       
       <div class="cards">
         <div class="card">
           <i class="fa-solid fa-recycle"></i>
-          <h3>Strategic Component Reuse</h3>
-          <p>Bypasses reinventing fundamental calculation elements by adopting standardized, robust structures like the java.time logic suite alongside Google Gson serialization packages to completely avoid design pattern bugs.</p>
+          <h3>Strategic Library Integration</h3>
+          <p>To avoid the security risks and bugs that come with custom text-parsing engines, Iterate reuses verified industry-standard libraries. It integrates the <code>java.time</code> package for calendar calculations and Google's <code>Gson</code> library for serialization, leveraging thousands of hours of peer-reviewed engineering to build a stable, secure foundation.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-cubes"></i>
           <h3>Component-Based Decomposition</h3>
-          <p>Maintains crisp, modular application boundaries: ClientUI drives console terminals; SocketCommunicator handles network serialization; HabitManager executes system logic metrics; FilePersistence acts on local storage paths.</p>
+          <p>The platform is split into decoupled, independent components with clear responsibilities. The <strong>Client UI Module</strong> manages the terminal views, the <strong>Socket Communicator</strong> handles network traffic, the <strong>Habit Tracker Core</strong> runs the core business logic, and the <strong>File Persistence Layer</strong> controls disk access, keeping the codebase easy to maintain and test.</p>
         </div>
       </div>
     </div>
@@ -694,49 +758,52 @@
     <div class="container">
       <div class="schedule-badge">WEEK 13–14 · Class 09 & 10</div>
       <h2 class="title">Distributed Systems Architecture</h2>
+      <p class="section-intro">
+        Deconstructing the network model, exploring multi-threaded socket pipelines, and mapping out the complete user transaction workflow.
+      </p>
       
       <div class="cards">
         <div class="card">
           <i class="fa-solid fa-network-wired"></i>
-          <h3>Distributed Two-Tier Paradigm</h3>
-          <p>Deconstructs monolithic layers by isolating the console client container cleanly away from computing server daemons. Data transfers across background TCP network pipelines.</p>
+          <h3>Two-Tier Client-Server Architecture</h3>
+          <p>Iterate breaks away from rigid, single-process architectures by using a distributed two-tier model. The user interface runs completely independently from the processing engine, sending structured payloads across local network ports. This separation makes it easy to scale the backend or update the frontend without impacting data consistency.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-bolt"></i>
-          <h3>Asynchronous Pipelines</h3>
-          <p>Executes network operations and physical disk writes inside separate processing threads, ensuring user interaction loops are completely non-blocking.</p>
+          <h3>Multi-Threaded Network Pipelines</h3>
+          <p>The backend application uses isolated execution threads to handle concurrent network requests. By managing network connections independently from data storage operations, the system prevents heavy disk writes from locking up the interface, ensuring smooth, non-blocking operations under typical usage workloads.</p>
         </div>
       </div>
 
       <h3 class="subtitle-node"><i class="fa-solid fa-route"></i> Typical User Workflow Sequence</h3>
-      <div class="timeline" style="max-width: 800px; margin-top: 20px;">
+      <div class="timeline" style="max-width: 900px; margin-top: 20px;">
         <div class="timeline-step">
-          <h4>1. Client Initialization</h4>
-          <p style="color: var(--text-muted); font-size:14px;">User boots client workspace; configuration data integrity checks are calculated.</p>
+          <h4>1. Client Process Launch</h4>
+          <p style="color: var(--text-muted); font-size:14px; text-align: justify;">The client workspace boots up, allocations run in local memory, and environmental verification checks are executed to ensure system readiness.</p>
         </div>
         <div class="timeline-step">
-          <h4>2. Port Negotiation</h4>
-          <p style="color: var(--text-muted); font-size:14px;">The UI tier binds and locks communication ports with the live backend daemon.</p>
+          <h4>2. Network Handshake & Socket Connection</h4>
+          <p style="color: var(--text-muted); font-size:14px; text-align: justify;">The client establishes a secure connection with the backend daemon over a configured TCP port, creating reliable, bidirectional data streams.</p>
         </div>
         <div class="timeline-step">
-          <h4>3. Selection Context</h4>
-          <p style="color: var(--text-muted); font-size:14px;">The user chooses a target tracker directly inside the command menu interface.</p>
+          <h4>3. Habit Selection Context</h4>
+          <p style="color: var(--text-muted); font-size:14px; text-align: justify;">The user interacts with the interface to select a habit target, generating a structured command payload within the UI component.</p>
         </div>
         <div class="timeline-step">
-          <h4>4. Payload Dispatched</h4>
-          <p style="color: var(--text-muted); font-size:14px;">The tracking updates are compiled and transmitted over local TCP streams.</p>
+          <h4>4. Payload Serialization & Dispatch</h4>
+          <p style="color: var(--text-muted); font-size:14px; text-align: justify;">The client serializes the update request into a clean JSON string packet and transmits it across the open TCP socket stream to the backend.</p>
         </div>
         <div class="timeline-step">
-          <h4>5. Server Logic Parsing</h4>
-          <p style="color: var(--text-muted); font-size:14px;">The active computation node processes the date stamps against business logic bounds.</p>
+          <h4>5. Server-Side Schema Validation</h4>
+          <p style="color: var(--text-muted); font-size:14px; text-align: justify;">The server receives the data packet, validates it against the core schema configuration, and ensures it complies with all safety and calendar rules.</p>
         </div>
         <div class="timeline-step">
-          <h4>6. Array Updates</h4>
-          <p style="color: var(--text-muted); font-size:14px;">The runtime metric values increment cleanly following valid payload processing.</p>
+          <h4>6. State Mutation & Verification</h4>
+          <p style="color: var(--text-muted); font-size:14px; text-align: justify;">Once validated, the server core updates the habit metrics, increments tracking counters, and logs the change to the active data state.</p>
         </div>
         <div class="timeline-step">
-          <h4>7. Storage Flush</h4>
-          <p style="color: var(--text-muted); font-size:14px;">The configuration states are safely committed to the persistent storage drive.</p>
+          <h4>7. Atomic Disk Commit</h4>
+          <p style="color: var(--text-muted); font-size:14px; text-align: justify;">The server writes the updated data models to disk using an atomic file commit process, safely closing the transaction loop and securing the new state.</p>
         </div>
       </div>
     </div>
@@ -746,6 +813,9 @@
     <div class="container">
       <div class="schedule-badge">WEEK 15–16 · Final Harvest</div>
       <h2 class="title">The Final Proof</h2>
+      <p class="section-intro">
+        Visual systems gallery, architectural evidence reviews, and strategic project goals for scaling the enterprise platform.
+      </p>
       
       <h3 class="subtitle-node"><i class="fa-solid fa-desktop"></i> System Execution Gallery</h3>
       <div class="gallery-grid">
@@ -753,31 +823,49 @@
           <div class="img-wrapper">
             <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=600&q=80" alt="Client Terminal Output">
           </div>
-          <div class="gallery-caption">Client Interface Terminal Output</div>
+          <div class="gallery-caption">Client Interface Terminal Output Window</div>
         </div>
         <div class="gallery-card">
           <div class="img-wrapper">
             <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=600&q=80" alt="Server Execution Activity Logs">
           </div>
-          <div class="gallery-caption">Server Context Runtime Engine</div>
+          <div class="gallery-caption">Server Context Runtime Dependency Engine</div>
         </div>
         <div class="gallery-card">
           <div class="img-wrapper">
             <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="JSON Flat File Storage">
           </div>
-          <div class="gallery-caption">JSON Flat File Database Persistence Layer</div>
+          <div class="gallery-caption">JSON Flat File Structural Database Framework</div>
         </div>
       </div>
 
-      <div class="card summary-card" style="margin-top: 40px;">
+      <div class="card summary-card" style="margin-top: 50px;">
         <h3><i class="fa-solid fa-list-check"></i> Project Architectural Evidence Summary</h3>
         <div class="summary-grid">
-          <div class="summary-item"><strong>Core Challenge:</strong> Manual text logs cause processing faults, lost states, and metrics discrepancies.</div>
-          <div class="summary-item"><strong>Engine Solution:</strong> Dynamic calculation engine utilizing direct socket transmission combined with calendar rules.</div>
-          <div class="summary-item"><strong>Reliability Action:</strong> Logical loops suppress and clean consecutive date submissions immediately.</div>
-          <div class="summary-item"><strong>Resilience Setup:</strong> Structured error blocks intercept processing exceptions to perform safety overrides.</div>
-          <div class="summary-item"><strong>System Distribution:</strong> Scalable split model isolating client displays from data servers using custom pipelines.</div>
-          <div class="summary-item"><strong>Dependency Reuse:</strong> Embedded reliable industry-standard libraries to eliminate design pattern bugs.</div>
+          <div class="summary-item">
+            <strong>Core Challenge:</strong>
+            Traditional text logs frequently suffer from partial writes and structural syntax corruption during sudden application shutdowns, leading to broken files and data loss.
+          </div>
+          <div class="summary-item">
+            <strong>Engine Solution:</strong>
+            Iterate uses a decoupled client-server architecture built on multi-threaded TCP sockets and structured JSON mapping to isolate data processing from UI states.
+          </div>
+          <div class="summary-item">
+            <strong>Reliability Action:</strong>
+            The backend features proactive temporal validation logic, analyzing request patterns to suppress and filter out duplicate or redundant payloads.
+          </div>
+          <div class="summary-item">
+            <strong>Resilience Setup:</strong>
+            Defensive error handling loops monitor system execution, intercepting file access and connection errors to run automated recovery routines.
+          </div>
+          <div class="summary-item">
+            <strong>System Distribution:</strong>
+            A distributed two-tier design isolates client applications from data services, handling incoming requests using dedicated thread pools for stable operations.
+          </div>
+          <div class="summary-item">
+            <strong>Dependency Reuse:</strong>
+            Core modules reuse thoroughly tested libraries, including <code>Google Gson</code> and <code>java.time</code>, minimizing vulnerabilities and code defects.
+          </div>
         </div>
       </div>
 
@@ -785,23 +873,23 @@
       <div class="cards">
         <div class="card">
           <i class="fa-solid fa-users-gear"></i>
-          <h3>Secure Authentication Profile Modules</h3>
-          <p>Integrates granular access structures to enable multi-tenant account capabilities.</p>
+          <h3>Secure Multi-Tenant Authentication</h3>
+          <p>Plans to introduce secure user authentication modules using industry-standard protocols like OAuth2 and JWT, enabling granular data privacy and multi-tenant access models.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-cloud-arrow-up"></i>
-          <h3>Global Cloud Replication Engines</h3>
-          <p>Migrates localized workflows into synchronized background databases.</p>
+          <h3>Cloud Sync & Replication</h3>
+          <p>Aims to migrate the flat-file persistence layer toward managed cloud storage options, adding automated, real-time data replication to protect records from local hardware failures.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-chart-line"></i>
-          <h3>Advanced Data Visualization Dashboards</h3>
-          <p>Generates actionable metrics via clean user interface plotting charts.</p>
+          <h3>Analytical Dashboards</h3>
+          <p>Intends to integrate visual reporting tools into the user workspace, using modern chart controls to provide users with clear, actionable summaries of their historical productivity metrics.</p>
         </div>
         <div class="card">
           <i class="fa-solid fa-mobile-screen-button"></i>
-          <h3>Native Mobile Application Frameworks</h3>
-          <p>Deploys corresponding mobile codebases across iOS and Android ecosystems.</p>
+          <h3>Cross-Platform Mobile Apps</h3>
+          <p>Plans to extend the distributed architecture to mobile devices, building native iOS and Android apps that connect securely to the centralized validation backend.</p>
         </div>
       </div>
     </div>
@@ -810,7 +898,7 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2 class="title">Get In Touch</h2>
-      <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto;">
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">
         Have questions regarding this system dependability implementation or architectural choices? Reach out through any of the channels below.
       </p>
       
